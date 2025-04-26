@@ -20,6 +20,8 @@ export async function connectToDatabase() {
     const opts = {
       bufferCommands: true,
       maxPoolSize: 10,
+      dbName: "reels_db"
+      
     };
 
     cached.promise = mongoose
